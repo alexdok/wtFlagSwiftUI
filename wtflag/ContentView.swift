@@ -5,13 +5,9 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var countries = ["UK", "USA", "Germany", "Bangladesh", "Argentina", "Brazil", "Canada", "Greece", "Russia", "Sweden"].shuffled()
-
     @State private var trueAnswer = Int.random(in: 0...2)
-    
     @State private var totalScore = 0
-    
     @State private var showingScore = false
-    
     @State private var scoreTitle  = ""
     
     var body: some View {
@@ -65,29 +61,6 @@ struct ContentView: View {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
